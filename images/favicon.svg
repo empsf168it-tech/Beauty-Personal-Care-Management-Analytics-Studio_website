@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <!-- Background circle -->
+  <circle cx="32" cy="32" r="32" fill="#241B22"/>
+  <!-- Outer aura petal -->
+  <path d="M32 8 C46 18, 52 34, 32 56 C12 34, 18 18, 32 8 Z" fill="none" stroke="#D6A85F" stroke-width="2.5"/>
+  <!-- Inner gemstone / core -->
+  <circle cx="32" cy="32" r="9" fill="#6D3B63"/>
+  <circle cx="32" cy="32" r="4" fill="#D6A85F"/>
+  <!-- Analytics axis spark -->
+  <line x1="32" y1="14" x2="32" y2="50" stroke="#C9829B" stroke-width="1.5" stroke-dasharray="3,2"/>
+  <circle cx="32" cy="14" r="2" fill="#D6A85F"/>
+  <circle cx="44" cy="26" r="2" fill="#C9829B"/>
+  <circle cx="20" cy="26" r="2" fill="#C9829B"/>
+</svg>

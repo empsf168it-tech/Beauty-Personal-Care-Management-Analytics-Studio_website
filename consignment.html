@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Studio Onboarding &amp; Integration | Beauty Personal Care Management &amp; Analytics Studio</title>
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+    <meta name="description"
+        content="Seamless onboarding and systems integration for salons, luxury spas, aesthetic clinics, and personal care brands.">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body data-theme="light">
+
+    <!-- Header -->
+    <nav class="navbar-luxury">
+        <div class="container-custom d-flex justify-content-between align-items-center">
+            <a href="index.html" class="brand-logo">
+                <svg xmlns="http://www.w3.org/2000/svg" height="38" viewBox="0 0 280 38" fill="none" aria-label="Beauty Personal Care Management & Analytics Studio" style="display:inline-block;vertical-align:middle;"><g transform="translate(2,3)"><path d="M16 2 C24 8, 28 18, 16 32 C4 18, 8 8, 16 2 Z" fill="none" stroke="#D6A85F" stroke-width="1.8"/><circle cx="16" cy="17" r="4" fill="#6D3B63"/><circle cx="16" cy="17" r="2" fill="#D6A85F"/><line x1="16" y1="5" x2="16" y2="29" stroke="#C9829B" stroke-width="1" stroke-dasharray="2,2"/></g><text x="38" y="21" font-family="'Cormorant Garamond', Georgia, serif" font-size="17" font-weight="700" letter-spacing="1.5" fill="currentColor">BEAUTY STUDIO</text><text x="38" y="32" font-family="'Manrope', sans-serif" font-size="7.5" font-weight="600" letter-spacing="2" fill="#D6A85F">MANAGEMENT &amp; ANALYTICS</text></svg>
+            </a>
+
+            <div class="nav-links-desktop d-none d-lg-block">
+                <a href="index.html" class="nav-link-custom">Home</a>
+                <a href="home2.html" class="nav-link-custom">Executive Suite</a>
+                <a href="collections.html" class="nav-link-custom">Solutions</a>
+                <a href="consignment.html" class="nav-link-custom active">Onboarding</a>
+                <a href="about.html" class="nav-link-custom">About</a>
+                <a href="contact.html" class="nav-link-custom">Contact</a>
+            </div>
+
+            <div class="header-actions d-flex align-items-center">
+                <button id="theme-toggle" class="btn border-0 p-2 me-2 d-none d-lg-inline-flex" aria-label="Toggle Theme">
+                    <i class="bi bi-moon"></i>
+                </button>
+                <button id="rtl-toggle" class="btn border-0 p-2 me-2 d-none d-lg-inline-flex" aria-label="Toggle RTL">
+                    <i class="bi bi-text-paragraph"></i>
+                </button>
+                <a href="#" class="nav-link-custom me-3 d-none d-lg-inline-flex"><i class="bi bi-heart"></i></a>
+                <button id="hamburger-menu" class="btn border-0 p-0 d-lg-none" aria-label="Open Menu">
+                    <i class="bi bi-list fs-3"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Sidebar Menu (Mobile & Expanded) -->
+    <div id="sidebar-overlay" class="sidebar-overlay"></div>
+    <div id="sidebar-menu" class="sidebar-menu">
+        <div id="sidebar-close" class="sidebar-close"><i class="bi bi-x-lg"></i></div>
+        <nav class="d-flex flex-column gap-4">
+            <a href="index.html" class="fs-4 luxury-heading">Home</a>
+            <a href="home2.html" class="fs-4 luxury-heading">Executive Suite</a>
+            <a href="collections.html" class="fs-4 luxury-heading">Solutions</a>
+            <a href="consignment.html" class="fs-4 luxury-heading">Onboarding</a>
+            <a href="about.html" class="fs-4 luxury-heading">Our Story</a>
+            <a href="contact.html" class="fs-4 luxury-heading">Contact</a>
+        </nav>
+        <div class="sidebar-utilities d-flex align-items-center gap-3 mt-4 pt-4">
+            <button class="btn theme-toggle-btn d-inline-flex align-items-center gap-2" aria-label="Toggle Theme">
+                <i class="bi bi-moon"></i>
+                <span class="theme-label">Dark Mode</span>
+            </button>
+            <button class="btn rtl-toggle-btn d-inline-flex align-items-center gap-2" aria-label="Toggle RTL">
+                <i class="bi bi-text-paragraph"></i>
+                <span class="rtl-label">RTL</span>
+            </button>
+        </div>
+    </div>
+
+    <!-- Page Header (Unified Hero) -->
+    <header class="hero hero-small mb-5" style="background-image: url('images/consignment_process.png');">
+        <div class="hero-overlay"></div>
+        <div class="hero-content container py-5 text-center">
+            <span class="text-white text-uppercase letter-spacing-2 mb-3 d-block">Partner With Studio</span>
+            <h1 class="text-white display-3 luxury-heading">Seamless Studio Onboarding</h1>
+            <p class="text-white-50 mx-auto mb-0" style="max-width: 600px;">Integrate your salon, spa, or personal care brand with our management analytics infrastructure in 4 simple steps.</p>
+        </div>
+    </header>
+
+    <!-- Consignment Process / Onboarding Steps -->
+    <section class="pb-5 consignment-process-section">
+        <div class="container-custom">
+            <div class="row g-5">
+                <div class="col-lg-7">
+                    <h2 class="luxury-heading mb-5">Successful Studio Onboarding in 4 Steps</h2>
+
+                    <div class="process-step mb-5 d-flex gap-4">
+                        <div class="step-number text-gold fs-2">01</div>
+                        <div>
+                            <h4 class="luxury-heading h5 mb-2">Initial Business Profile Submission</h4>
+                            <p class="text-muted">Submit your business profile with details regarding your current POS booking platform, location counts, active service categories, and primary growth targets.</p>
+                        </div>
+                    </div>
+
+                    <div class="process-step mb-5 d-flex gap-4">
+                        <div class="step-number text-gold fs-2">02</div>
+                        <div>
+                            <h4 class="luxury-heading h5 mb-2">Systems &amp; Data Pipeline Review</h4>
+                            <p class="text-muted">Our technical integrations team conducts a non-invasive review of your historical appointment catalogs, client records, and service pricing architecture.</p>
+                        </div>
+                    </div>
+
+                    <div class="process-step mb-5 d-flex gap-4">
+                        <div class="step-number text-gold fs-2">03</div>
+                        <div>
+                            <h4 class="luxury-heading h5 mb-2">Custom Dashboard Calibration</h4>
+                            <p class="text-muted">We configure your tailored executive dashboards, client retention alert triggers, therapist commission tiers, and treatment room utilization algorithms.</p>
+                        </div>
+                    </div>
+
+                    <div class="process-step mb-5 d-flex gap-4">
+                        <div class="step-number text-gold fs-2">04</div>
+                        <div>
+                            <h4 class="luxury-heading h5 mb-2">Live Analytics &amp; Strategic Advisory</h4>
+                            <p class="text-muted">Your analytics portal goes live with real-time tracking. Receive comprehensive staff onboarding and access monthly executive strategy sessions.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-5">
+                    <div class="p-5 bg-ivory border-color sticky-top ready-consign-card" style="top: 120px;">
+                        <h3 class="luxury-heading h4 mb-4">Ready for Studio Onboarding?</h3>
+                        <p class="small text-muted mb-4">We are actively onboarding premier salons, luxury day spas, aesthetic medical clinics, and prestige cosmetic brands.</p>
+                        <ul class="list-unstyled mb-5 small text-muted">
+                            <li class="mb-2"><i class="bi bi-check2 text-gold me-2"></i> Seamless sync with major beauty POS software</li>
+                            <li class="mb-2"><i class="bi bi-check2 text-gold me-2"></i> Comprehensive historical data migration</li>
+                            <li class="mb-2"><i class="bi bi-check2 text-gold me-2"></i> Zero downtime for daily front-desk operations</li>
+                        </ul>
+                        <a href="contact.html" class="btn-gold w-100 py-3">Apply for Onboarding</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-5 bg-ivory consignment-faq-section">
+        <div class="container-custom py-5">
+            <h2 class="text-center luxury-heading mb-5">Frequently Asked Questions</h2>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="accordion accordion-flush" id="faqAccordion">
+                        <div class="accordion-item bg-transparent">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed bg-transparent luxury-heading" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#faq1">
+                                    How long does the studio integration take?
+                                </button>
+                            </h2>
+                            <div id="faq1" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body text-muted small">
+                                    Standard onboarding is completed within 3 to 7 business days. Our engineers handle automated data ingestion and dashboard calibration with zero disruption to your daily bookings.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item bg-transparent">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed bg-transparent luxury-heading" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#faq2">
+                                    Can we manage multiple salon or spa locations?
+                                </button>
+                            </h2>
+                            <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body text-muted small">
+                                    Yes. Our studio architecture is engineered for multi-location groups, providing location-specific manager views alongside high-level group rollup intelligence.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 1: Why Partner With Us -->
+    <section class="py-5">
+        <div class="container-custom py-5">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-6">
+                    <img src="images/dress_1.png" alt="Why Partner" class="img-fluid luxury-shadow w-100"
+                        style="object-fit:cover; max-height:520px;">
+                </div>
+                <div class="col-lg-6">
+                    <span class="text-gold text-uppercase letter-spacing-2 small mb-3 d-block">The Studio Advantage</span>
+                    <h2 class="display-5 luxury-heading mb-4">Why Partner With Our Studio?</h2>
+                    <p class="mb-5">We eliminate guesswork from beauty business management. From therapist utilization tracking to granular service margin audits, our platform delivers actionable clarity so you can scale with certainty.</p>
+                    <div class="d-flex flex-column gap-4">
+                        <div class="d-flex align-items-start gap-4">
+                            <div class="text-gold fs-3 lh-1"><i class="bi bi-cpu"></i></div>
+                            <div>
+                                <h5 class="luxury-heading h6 mb-1">Automated Pipeline Ingestion</h5>
+                                <p class="small text-muted mb-0">Continuous synchronization eliminates manual spreadsheet updates and manual reporting errors.</p>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-start gap-4">
+                            <div class="text-gold fs-3 lh-1"><i class="bi bi-graph-up-arrow"></i></div>
+                            <div>
+                                <h5 class="luxury-heading h6 mb-1">Dynamic Margin Modeling</h5>
+                                <p class="small text-muted mb-0">Data-backed recommendations for service pricing, treatment durations, and chair allocation.</p>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-start gap-4">
+                            <div class="text-gold fs-3 lh-1"><i class="bi bi-person-lines-fill"></i></div>
+                            <div>
+                                <h5 class="luxury-heading h6 mb-1">Omni-Channel Customer Analytics</h5>
+                                <p class="small text-muted mb-0">Connect in-salon treatment history directly with e-commerce retail skincare and haircare purchases.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 2: What We Support -->
+    <section class="py-5 bg-ivory">
+        <div class="container-custom py-5">
+            <div class="row align-items-center g-5 flex-row-reverse">
+                <div class="col-lg-6">
+                    <img src="images/dress_2.png" alt="Who We Support" class="img-fluid luxury-shadow w-100"
+                        style="object-fit:cover; max-height:520px;">
+                </div>
+                <div class="col-lg-6">
+                    <span class="text-gold text-uppercase letter-spacing-2 small mb-3 d-block">Industry Coverage</span>
+                    <h2 class="display-5 luxury-heading mb-4">Who We Empower</h2>
+                    <p class="mb-5">Our studio caters to a diverse spectrum of premium personal care and wellness businesses seeking data-driven operational excellence.</p>
+                    <div class="row g-3">
+                        <div class="col-6">
+                            <div class="p-4 h-100 luxury-shadow" style="border-left: 3px solid var(--accent-gold);">
+                                <h6 class="luxury-heading mb-2">High-End Hair &amp; Beauty Salons</h6>
+                                <p class="small text-muted mb-0">Multi-chair salons looking to boost rebooking cadences and stylist retail sales.</p>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="p-4 h-100 luxury-shadow" style="border-left: 3px solid var(--accent-gold);">
+                                <h6 class="luxury-heading mb-2">Medical Spas &amp; Aesthetics</h6>
+                                <p class="small text-muted mb-0">Clinical practices requiring secure analytics and high-value treatment tracking.</p>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="p-4 h-100 luxury-shadow" style="border-left: 3px solid var(--accent-gold);">
+                                <h6 class="luxury-heading mb-2">Luxury Day Spas &amp; Resorts</h6>
+                                <p class="small text-muted mb-0">Multi-room scheduling, therapist rotation, and package yield optimization.</p>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="p-4 h-100 luxury-shadow" style="border-left: 3px solid var(--accent-gold);">
+                                <h6 class="luxury-heading mb-2">Personal Care &amp; Cosmetics</h6>
+                                <p class="small text-muted mb-0">Direct-to-consumer skincare brands tracking SKU attachment and repeat purchases.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 3: Seller Results Stats -->
+    <section class="py-5">
+        <div class="container-custom py-5">
+            <div class="text-center mb-5">
+                <h2 class="display-5 luxury-heading">Demonstrated Studio Results</h2>
+                <p class="text-muted">Join over 1,200 beauty and personal care leaders transforming raw data into sustainable profitability.</p>
+            </div>
+            <div class="row g-4 text-center mb-5">
+                <div class="col-6 col-md-3">
+                    <div class="p-4 luxury-shadow h-100">
+                        <h3 class="luxury-heading text-gold display-5">1,200+</h3>
+                        <p class="small text-muted mb-0 text-uppercase letter-spacing-1">Studios Onboarded</p>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="p-4 luxury-shadow h-100">
+                        <h3 class="luxury-heading text-gold display-5">+38%</h3>
+                        <p class="small text-muted mb-0 text-uppercase letter-spacing-1">Net Margin Lift</p>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="p-4 luxury-shadow h-100">
+                        <h3 class="luxury-heading text-gold display-5">14</h3>
+                        <p class="small text-muted mb-0 text-uppercase letter-spacing-1">Days Avg. to ROI</p>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="p-4 luxury-shadow h-100">
+                        <h3 class="luxury-heading text-gold display-5">99.2%</h3>
+                        <p class="small text-muted mb-0 text-uppercase letter-spacing-1">Partner Retention</p>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center">
+                <a href="contact.html" class="btn-gold px-5 py-3">Start Onboarding Today</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container-custom">
+            <div class="row g-5">
+                <div class="col-lg-4">
+                    <a href="index.html" class="brand-logo mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="38" viewBox="0 0 280 38" fill="none" aria-label="Beauty Personal Care Management & Analytics Studio" style="display:inline-block;vertical-align:middle;"><g transform="translate(2,3)"><path d="M16 2 C24 8, 28 18, 16 32 C4 18, 8 8, 16 2 Z" fill="none" stroke="#D6A85F" stroke-width="1.8"/><circle cx="16" cy="17" r="4" fill="#6D3B63"/><circle cx="16" cy="17" r="2" fill="#D6A85F"/><line x1="16" y1="5" x2="16" y2="29" stroke="#C9829B" stroke-width="1" stroke-dasharray="2,2"/></g><text x="38" y="21" font-family="'Cormorant Garamond', Georgia, serif" font-size="17" font-weight="700" letter-spacing="1.5" fill="currentColor">BEAUTY STUDIO</text><text x="38" y="32" font-family="'Manrope', sans-serif" font-size="7.5" font-weight="600" letter-spacing="2" fill="#D6A85F">MANAGEMENT &amp; ANALYTICS</text></svg>
+                    </a>
+                    <p class="text-muted pe-lg-5">A dedicated management and analytics studio for salon chains, luxury wellness spas, aesthetic clinics, and personal care brands.</p>
+                    <div class="d-flex mt-4">
+                        <a href="#" class="social-icon"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="social-icon"><i class="bi bi-linkedin"></i></a>
+                        <a href="#" class="social-icon"><i class="bi bi-twitter-x"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-4 col-lg-2">
+                    <h5 class="luxury-heading mb-4">Solutions</h5>
+                    <a href="collections.html" class="footer-link">Salon Operations</a>
+                    <a href="collections.html" class="footer-link">Client Intelligence</a>
+                    <a href="collections.html" class="footer-link">Revenue Analytics</a>
+                    <a href="collections.html" class="footer-link">Staff Performance</a>
+                </div>
+                <div class="col-md-4 col-lg-2">
+                    <h5 class="luxury-heading mb-4">Quick Links</h5>
+                    <a href="consignment.html" class="footer-link">Studio Onboarding</a>
+                    <a href="about.html" class="footer-link">Our Story</a>
+                    <a href="contact.html" class="footer-link">Schedule Advisory</a>
+                    <a href="contact.html" class="footer-link">Advisory Hub</a>
+                </div>
+                <div class="col-md-4 col-lg-4">
+                    <h5 class="luxury-heading mb-4">Studio Newsletter</h5>
+                    <p class="small text-muted mb-4">Subscribe for executive beauty industry insights, KPI benchmarks, and data-driven management strategies.</p>
+                    <div class="d-flex">
+                        <input type="email" class="form-control-luxury me-2" placeholder="Corporate Email">
+                        <button class="btn-gold px-4">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-5 opacity-10">
+            <div class="d-flex flex-column flex-md-row justify-content-between align-items-center gap-3">
+                <p class="small text-muted mb-0">&copy; 2026 Beauty Personal Care Management &amp; Analytics Studio. All rights reserved.</p>
+                <div class="d-flex gap-4">
+                    <a href="#" class="small text-muted">Privacy Policy</a>
+                    <a href="#" class="small text-muted">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

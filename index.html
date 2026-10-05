@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beauty Personal Care Management & Analytics Studio | Enterprise Intelligence</title>
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+    <meta name="description"
+        content="Empowering salons, luxury spas, and personal care brands with real-time analytics, client retention insights, appointment intelligence, and business management.">
+
+    <!-- Bootstrap 5 CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body data-theme="light">
+
+    <!-- Header -->
+    <nav class="navbar-luxury">
+        <div class="container-custom d-flex justify-content-between align-items-center">
+            <a href="index.html" class="brand-logo">
+                <svg xmlns="http://www.w3.org/2000/svg" height="38" viewBox="0 0 280 38" fill="none" aria-label="Beauty Personal Care Management & Analytics Studio" style="display:inline-block;vertical-align:middle;"><g transform="translate(2,3)"><path d="M16 2 C24 8, 28 18, 16 32 C4 18, 8 8, 16 2 Z" fill="none" stroke="#D6A85F" stroke-width="1.8"/><circle cx="16" cy="17" r="4" fill="#6D3B63"/><circle cx="16" cy="17" r="2" fill="#D6A85F"/><line x1="16" y1="5" x2="16" y2="29" stroke="#C9829B" stroke-width="1" stroke-dasharray="2,2"/></g><text x="38" y="21" font-family="'Cormorant Garamond', Georgia, serif" font-size="17" font-weight="700" letter-spacing="1.5" fill="currentColor">BEAUTY STUDIO</text><text x="38" y="32" font-family="'Manrope', sans-serif" font-size="7.5" font-weight="600" letter-spacing="2" fill="#D6A85F">MANAGEMENT &amp; ANALYTICS</text></svg>
+            </a>
+
+            <div class="nav-links-desktop d-none d-lg-block">
+                <a href="index.html" class="nav-link-custom active">Home</a>
+                <a href="home2.html" class="nav-link-custom">Executive Suite</a>
+                <a href="collections.html" class="nav-link-custom">Solutions</a>
+                <a href="consignment.html" class="nav-link-custom">Onboarding</a>
+                <a href="about.html" class="nav-link-custom">About</a>
+                <a href="contact.html" class="nav-link-custom">Contact</a>
+            </div>
+
+            <div class="header-actions d-flex align-items-center">
+                <button id="theme-toggle" class="btn border-0 p-2 me-2 d-none d-lg-inline-flex" aria-label="Toggle Theme">
+                    <i class="bi bi-moon"></i>
+                </button>
+                <button id="rtl-toggle" class="btn border-0 p-2 me-2 d-none d-lg-inline-flex" aria-label="Toggle RTL">
+                    <i class="bi bi-text-paragraph"></i>
+                </button>
+                <a href="#" class="nav-link-custom me-3 d-none d-lg-inline-flex"><i class="bi bi-heart"></i></a>
+                <button id="hamburger-menu" class="btn border-0 p-0 d-lg-none" aria-label="Open Menu">
+                    <i class="bi bi-list fs-3"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Sidebar Menu (Mobile & Expanded) -->
+    <div id="sidebar-overlay" class="sidebar-overlay"></div>
+    <div id="sidebar-menu" class="sidebar-menu">
+        <div id="sidebar-close" class="sidebar-close"><i class="bi bi-x-lg"></i></div>
+        <nav class="d-flex flex-column gap-4">
+            <a href="index.html" class="fs-4 luxury-heading">Home</a>
+            <a href="home2.html" class="fs-4 luxury-heading">Executive Suite</a>
+            <a href="collections.html" class="fs-4 luxury-heading">Solutions</a>
+            <a href="consignment.html" class="fs-4 luxury-heading">Onboarding</a>
+            <a href="about.html" class="fs-4 luxury-heading">Our Story</a>
+            <a href="contact.html" class="fs-4 luxury-heading">Contact</a>
+        </nav>
+        <div class="sidebar-utilities d-flex align-items-center gap-3 mt-4 pt-4">
+            <button class="btn theme-toggle-btn d-inline-flex align-items-center gap-2" aria-label="Toggle Theme">
+                <i class="bi bi-moon"></i>
+                <span class="theme-label">Dark Mode</span>
+            </button>
+            <button class="btn rtl-toggle-btn d-inline-flex align-items-center gap-2" aria-label="Toggle RTL">
+                <i class="bi bi-text-paragraph"></i>
+                <span class="rtl-label">RTL</span>
+            </button>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <header class="hero hero-full-image" style="background-image: url('https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=1600&q=80'); background-size: cover !important; background-position: center center !important; background-repeat: no-repeat !important;">
+        <div class="hero-overlay"></div>
+        <div class="hero-content container">
+            <span class="text-white text-uppercase letter-spacing-2 mb-3 d-block" style="letter-spacing: 4px;">Beauty Business Intelligence</span>
+            <h1 class="text-white">Smarter Management for Modern Beauty Businesses.</h1>
+            <p class="text-white opacity-75 mb-5 mx-auto" style="max-width: 650px;">Transform client experiences, optimize appointment capacity, track treatment profitability, and elevate personal care performance through intelligent analytics.</p>
+            <div class="d-flex flex-column flex-md-row justify-content-center gap-3">
+                <a href="collections.html" class="btn-gold">Explore Studio Analytics</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Featured Collections / Management Modules -->
+    <section class="py-5 bg-ivory">
+        <div class="container-custom py-5">
+            <div class="text-center mb-5">
+                <h2 class="display-5 mb-3">Management & Analytics Suites</h2>
+                <div class="accent-line mx-auto" style="width: 50px; height: 2px; background: var(--accent-gold);">
+                </div>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="product-card">
+                        <img src="images/collection_bridal.png" alt="Salon and Spa Operations">
+                        <div class="product-info">
+                            <h3>Salon & Spa Operations Hub</h3>
+                            <p class="text-muted">Predictive scheduling, staff productivity tracking, and chair utilization intelligence.</p>
+                            <a href="collections.html?category=operations"
+                                class="text-gold text-uppercase letter-spacing-1 small">Explore Operations Suite</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="product-card">
+                        <img src="images/collection_formal.png" alt="Customer Insights and Retention">
+                        <div class="product-info">
+                            <h3>Client Analytics & Retention Studio</h3>
+                            <p class="text-muted">Customer lifetime value modeling, treatment loyalty analytics, and churn prevention.</p>
+                            <a href="collections.html?category=analytics"
+                                class="text-gold text-uppercase letter-spacing-1 small">Explore Client Intelligence</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us / The Studio Advantage -->
+    <section class="py-5">
+        <div class="container-custom py-5">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-6">
+                    <h2 class="display-5 mb-4">The Studio Intelligence Advantage</h2>
+                    <p class="mb-4">At Beauty Personal Care Studio, we empower salons, medi-spas, and cosmetics brands with refined data clarity. Our integrated studio infrastructure provides deep visibility into every appointment, treatment margin, and customer journey.</p>
+                    <div class="row g-4">
+                        <div class="col-md-6">
+                            <i class="bi bi-graph-up-arrow text-gold fs-2 mb-2"></i>
+                            <h4 class="h5">Revenue & Margin Tracking</h4>
+                            <p class="small text-muted">Granular service profitability analytics and dynamic treatment pricing optimization.</p>
+                        </div>
+                        <div class="col-md-6">
+                            <i class="bi bi-calendar-check text-gold fs-2 mb-2"></i>
+                            <h4 class="h5">Appointment Optimization</h4>
+                            <p class="small text-muted">Predictive rebooking cadences and real-time chair utilization scoring.</p>
+                        </div>
+                        <div class="col-md-6">
+                            <i class="bi bi-people text-gold fs-2 mb-2"></i>
+                            <h4 class="h5">Staff Performance Metrics</h4>
+                            <p class="small text-muted">Commission modeling, service delivery velocity, and stylist productivity benchmarks.</p>
+                        </div>
+                        <div class="col-md-6">
+                            <i class="bi bi-bag-check text-gold fs-2 mb-2"></i>
+                            <h4 class="h5">Retail & Product Insights</h4>
+                            <p class="small text-muted">Track retail attachment rates, SKU turnaround cycles, and inventory demand forecasts.</p>
+                        </div>
+                    </div>
+                    <a href="about.html" class="btn-gold mt-5">Discover Studio Insights</a>
+                </div>
+                <div class="col-lg-6">
+                    <div class="position-relative">
+                        <img src="images/consignment_process.png" alt="Studio Intelligence Experience"
+                            class="img-fluid luxury-shadow">
+                        <div class="position-absolute bottom-0 end-0 bg-white p-4 d-block m-4 luxury-shadow"
+                            style="background: var(--card-bg) !important;">
+                            <p class="luxury-heading mb-0 fs-4">"Elevating beauty operations through precision analytics."</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Atelier Vision / Executive Perspective -->
+    <section class="py-5 bg-ivory">
+        <div class="container-custom py-5">
+            <div class="row align-items-center g-5 flex-row-reverse">
+                <div class="col-lg-6">
+                    <span class="text-gold text-uppercase letter-spacing-2 small mb-3 d-block">Executive Perspective</span>
+                    <h2 class="display-5 luxury-heading mb-4">Empowering Data-Driven Beauty Leadership</h2>
+                    <p class="mb-4">Behind every thriving salon, medical spa, and cosmetic atelier is a complex network of client touchpoints. Our analytics studio decodes client frequency, treatment preferences, and retail synergy into clear executive dashboards.</p>
+                    <p class="text-muted mb-5">From boutique wellness studios to multi-location beauty enterprises, our platform harmonizes front-desk workflows with boardroom-ready financial reporting to maximize enterprise value.</p>
+                    <a href="about.html" class="btn-outline">Our Methodology</a>
+                </div>
+                <div class="col-lg-6">
+                    <img src="images/collection_formal.png" alt="Beauty Studio Executive Perspective & Diagnostics" class="img-fluid luxury-shadow">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sustainable Couture / Performance Architecture -->
+    <section class="py-5">
+        <div class="container-custom py-5">
+            <div class="text-center mb-5">
+                <h2 class="display-5 luxury-heading">Engineered for Scalable Performance</h2>
+                <p class="text-muted">Modern intelligence architecture built exclusively for the personal care industry.</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="p-5 border-color text-center h-100 luxury-shadow">
+                        <i class="bi bi-bar-chart-line fs-1 text-gold mb-4"></i>
+                        <h4 class="h5 luxury-heading">Predictive Forecasting</h4>
+                        <p class="small text-muted mb-0">Anticipate seasonal appointment rushes, customer churn triggers, and optimal treatment promotional windows.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="p-5 border-color text-center h-100 luxury-shadow">
+                        <i class="bi bi-shield-check fs-1 text-gold mb-4"></i>
+                        <h4 class="h5 luxury-heading">Enterprise Privacy & Security</h4>
+                        <p class="small text-muted mb-0">Industry-standard encryption and strict safeguards for client consultations, medical notes, and payment histories.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="p-5 border-color text-center h-100 luxury-shadow">
+                        <i class="bi bi-diagram-3 fs-1 text-gold mb-4"></i>
+                        <h4 class="h5 luxury-heading">Seamless Ecosystem Sync</h4>
+                        <p class="small text-muted mb-0">Effortless synchronization with leading beauty POS systems, booking engines, and product inventory catalogs.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modern Stories / Client Testimonials -->
+    <section class="py-5 bg-secondary-subtle" style="background: var(--secondary-bg) !important;">
+        <div class="container-custom py-5">
+            <h2 class="display-5 luxury-heading text-center mb-5">Beauty Studio Success Stories</h2>
+            <div class="row g-4 align-items-stretch">
+                <div class="col-lg-8">
+                    <div class="h-100 p-0 overflow-hidden luxury-shadow position-relative" style="min-height: 400px;">
+                        <img src="images/consignment_process.png" alt="Studio Client Success"
+                            class="img-fluid w-100 h-100 object-fit-cover shadow-lg">
+                        <div class="position-absolute bottom-0 start-0 p-5 w-100"
+                            style="background: linear-gradient(transparent, rgba(0,0,0,0.88));">
+                            <p class="text-white mb-2 fs-4 luxury-heading">"Implementing the studio analytics framework transformed our 4-location salon group. We boosted repeat rebookings by 38% and unlocked our highest-margin signature services in quarter one."</p>
+                            <span class="text-gold text-uppercase small">— Elena Rostova, Founder &amp; Creative Director, Maison de Beauté</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="d-flex flex-column gap-4 h-100">
+                        <div class="p-4 bg-white luxury-shadow" style="background: var(--card-bg) !important;">
+                            <p class="small italic mb-3">"Real-time therapist capacity tracking eliminated our booking bottlenecks and lifted average ticket value by 26% across all locations."</p>
+                            <span class="text-gold small text-uppercase">— Dr. Marcus Vance, Medical Spa Director</span>
+                        </div>
+                        <div class="p-4 bg-white luxury-shadow" style="background: var(--card-bg) !important;">
+                            <p class="small italic mb-3">"The retail attachment insights alone gave our premium skincare lines a 45% revenue surge within three months."</p>
+                            <span class="text-gold small text-uppercase">— Genevieve Chen, Head of Brand Strategy</span>
+                        </div>
+                        <div class="p-4 bg-white luxury-shadow d-flex align-items-center justify-content-center text-center"
+                            style="background: var(--card-bg) !important;">
+                            <a href="contact.html" class="btn-gold px-4">Schedule Discovery</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container-custom">
+            <div class="row g-5">
+                <div class="col-lg-4">
+                    <a href="index.html" class="brand-logo mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="38" viewBox="0 0 280 38" fill="none" aria-label="Beauty Personal Care Management & Analytics Studio" style="display:inline-block;vertical-align:middle;"><g transform="translate(2,3)"><path d="M16 2 C24 8, 28 18, 16 32 C4 18, 8 8, 16 2 Z" fill="none" stroke="#D6A85F" stroke-width="1.8"/><circle cx="16" cy="17" r="4" fill="#6D3B63"/><circle cx="16" cy="17" r="2" fill="#D6A85F"/><line x1="16" y1="5" x2="16" y2="29" stroke="#C9829B" stroke-width="1" stroke-dasharray="2,2"/></g><text x="38" y="21" font-family="'Cormorant Garamond', Georgia, serif" font-size="17" font-weight="700" letter-spacing="1.5" fill="currentColor">BEAUTY STUDIO</text><text x="38" y="32" font-family="'Manrope', sans-serif" font-size="7.5" font-weight="600" letter-spacing="2" fill="#D6A85F">MANAGEMENT &amp; ANALYTICS</text></svg>
+                    </a>
+                    <p class="text-muted pe-lg-5">A dedicated management and analytics studio for salon chains, luxury wellness spas, aesthetic clinics, and personal care brands.</p>
+                    <div class="d-flex mt-4">
+                        <a href="#" class="social-icon"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="social-icon"><i class="bi bi-linkedin"></i></a>
+                        <a href="#" class="social-icon"><i class="bi bi-twitter-x"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-4 col-lg-2">
+                    <h5 class="luxury-heading mb-4">Solutions</h5>
+                    <a href="collections.html" class="footer-link">Salon Operations</a>
+                    <a href="collections.html" class="footer-link">Client Intelligence</a>
+                    <a href="collections.html" class="footer-link">Revenue Analytics</a>
+                    <a href="collections.html" class="footer-link">Staff Performance</a>
+                </div>
+                <div class="col-md-4 col-lg-2">
+                    <h5 class="luxury-heading mb-4">Quick Links</h5>
+                    <a href="consignment.html" class="footer-link">Studio Onboarding</a>
+                    <a href="about.html" class="footer-link">About Studio</a>
+                    <a href="contact.html" class="footer-link">Schedule Advisory</a>
+                    <a href="contact.html" class="footer-link">Advisory Hub</a>
+                </div>
+                <div class="col-md-4 col-lg-4">
+                    <h5 class="luxury-heading mb-4">Studio Newsletter</h5>
+                    <p class="small text-muted mb-4">Subscribe for executive beauty industry insights, KPI benchmarks, and data-driven management strategies.</p>
+                    <div class="d-flex">
+                        <input type="email" class="form-control-luxury me-2" placeholder="Corporate Email">
+                        <button class="btn-gold px-4">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-5 opacity-10">
+            <div class="d-flex flex-column flex-md-row justify-content-between align-items-center gap-3">
+                <p class="small text-muted mb-0">&copy; 2026 Beauty Personal Care Management &amp; Analytics Studio. All rights reserved.</p>
+                <div class="d-flex gap-4">
+                    <a href="#" class="small text-muted">Privacy Policy</a>
+                    <a href="#" class="small text-muted">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
