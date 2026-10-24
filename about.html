@@ -24,19 +24,16 @@
 
             <div class="nav-links-desktop d-none d-lg-block">
                 <a href="index.html" class="nav-link-custom">Home</a>
+                <a href="about.html" class="nav-link-custom active">About</a>
                 <a href="home2.html" class="nav-link-custom">Executive Suite</a>
                 <a href="collections.html" class="nav-link-custom">Solutions</a>
                 <a href="consignment.html" class="nav-link-custom">Onboarding</a>
-                <a href="about.html" class="nav-link-custom active">About</a>
                 <a href="contact.html" class="nav-link-custom">Contact</a>
             </div>
 
             <div class="header-actions d-flex align-items-center">
                 <button id="theme-toggle" class="btn border-0 p-2 me-2 d-none d-lg-inline-flex" aria-label="Toggle Theme">
                     <i class="bi bi-moon"></i>
-                </button>
-                <button id="rtl-toggle" class="btn border-0 p-2 me-2 d-none d-lg-inline-flex" aria-label="Toggle RTL">
-                    <i class="bi bi-text-paragraph"></i>
                 </button>
                 <a href="#" class="nav-link-custom me-3 d-none d-lg-inline-flex"><i class="bi bi-heart"></i></a>
                 <button id="hamburger-menu" class="btn border-0 p-0 d-lg-none" aria-label="Open Menu">
@@ -51,27 +48,23 @@
     <div id="sidebar-menu" class="sidebar-menu">
         <div id="sidebar-close" class="sidebar-close"><i class="bi bi-x-lg"></i></div>
         <nav class="d-flex flex-column gap-4">
-            <a href="index.html" class="fs-4 luxury-heading">Home</a>
-            <a href="home2.html" class="fs-4 luxury-heading">Executive Suite</a>
-            <a href="collections.html" class="fs-4 luxury-heading">Solutions</a>
-            <a href="consignment.html" class="fs-4 luxury-heading">Onboarding</a>
-            <a href="about.html" class="fs-4 luxury-heading">Our Story</a>
-            <a href="contact.html" class="fs-4 luxury-heading">Contact</a>
+            <a href="index.html" class="sidebar-nav-link">Home</a>
+            <a href="about.html" class="sidebar-nav-link active">About</a>
+            <a href="home2.html" class="sidebar-nav-link">Executive Suite</a>
+            <a href="collections.html" class="sidebar-nav-link">Solutions</a>
+            <a href="consignment.html" class="sidebar-nav-link">Onboarding</a>
+            <a href="contact.html" class="sidebar-nav-link">Contact</a>
         </nav>
         <div class="sidebar-utilities d-flex align-items-center gap-3 mt-4 pt-4">
             <button class="btn theme-toggle-btn d-inline-flex align-items-center gap-2" aria-label="Toggle Theme">
                 <i class="bi bi-moon"></i>
                 <span class="theme-label">Dark Mode</span>
             </button>
-            <button class="btn rtl-toggle-btn d-inline-flex align-items-center gap-2" aria-label="Toggle RTL">
-                <i class="bi bi-text-paragraph"></i>
-                <span class="rtl-label">RTL</span>
-            </button>
         </div>
     </div>
 
     <!-- Page Header (Unified Hero) -->
-    <header class="hero hero-small" style="background-image: url('images/collection_bridal.png');">
+    <header class="hero hero-small" style="background-image: url('https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=1600&q=80');">
         <div class="hero-overlay"></div>
         <div class="hero-content container py-5 text-center">
             <span class="text-white text-uppercase letter-spacing-2 mb-3 d-block">Studio Heritage</span>
@@ -81,7 +74,7 @@
     </header>
 
     <!-- About Main -->
-    <section class="py-5 about-founders-section">
+    <section class="py-5">
         <div class="container-custom py-5">
             <div class="row align-items-center g-5">
                 <div class="col-lg-6">
@@ -141,33 +134,29 @@
     </section>
 
     <!-- Section 1: Meet the Founders -->
-    <section class="py-5">
+    <section class="py-5 leadership-vision-section">
         <div class="container-custom py-5">
             <div class="row align-items-center g-5">
                 <div class="col-lg-6">
-                    <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=1200&q=80" alt="Studio Founders" class="img-fluid luxury-shadow w-100"
-                        style="object-fit:cover; max-height:520px;">
+                    <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=max&w=1200&q=80" alt="Studio Founders" class="img-fluid luxury-shadow w-100 founder-img"
+                        style="object-fit:cover; object-position: top center; max-height:560px;">
                 </div>
                 <div class="col-lg-6">
                     <span class="text-gold text-uppercase letter-spacing-2 small mb-3 d-block">Leadership &amp; Vision</span>
                     <h2 class="display-5 luxury-heading mb-4">Meet the Studio Founders</h2>
                     <p class="mb-4">Beauty Personal Care Studio was founded by beauty industry executives and data scientists who recognized a persistent gap: while beauty treatments were advancing rapidly, the back-office management and analytics systems remained fragmented.</p>
                     <p class="text-muted mb-5">Today, our multidisciplinary team advises award-winning salons, medical spa groups, and prestige cosmetic brands worldwide, delivering actionable business intelligence that fuels sustainable expansion.</p>
-                    <div class="d-flex gap-4 founders-list">
-                        <div class="d-flex align-items-center gap-3 founder-item">
-                            <div class="rounded-circle d-flex align-items-center justify-content-center"
-                                style="width:48px;height:48px;background:var(--accent-gold);color:var(--btn-text);font-weight:700;">
-                                A</div>
-                            <div>
+                    <div class="founders-list">
+                        <div class="founder-item">
+                            <div class="founder-circle">A</div>
+                            <div class="founder-content">
                                 <h6 class="luxury-heading mb-0">Amara Chen</h6>
                                 <p class="small text-muted mb-0">Co-Founder &amp; Chief Analytics Officer</p>
                             </div>
                         </div>
-                        <div class="d-flex align-items-center gap-3 founder-item">
-                            <div class="rounded-circle d-flex align-items-center justify-content-center"
-                                style="width:48px;height:48px;background:var(--accent-gold);color:var(--btn-text);font-weight:700;">
-                                S</div>
-                            <div>
+                        <div class="founder-item">
+                            <div class="founder-circle">S</div>
+                            <div class="founder-content">
                                 <h6 class="luxury-heading mb-0">Sofia Laurent</h6>
                                 <p class="small text-muted mb-0">Co-Founder &amp; Head of Studio Operations</p>
                             </div>
@@ -231,7 +220,7 @@
             <div class="row g-4">
                 <div class="col-md-4">
                     <div class="position-relative overflow-hidden luxury-shadow" style="height: 420px;">
-                        <img src="images/collection_formal.png" alt="Intelligence Engine"
+                        <img src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&w=800&q=80" alt="Intelligence Engine"
                             class="w-100 h-100 object-fit-cover">
                         <div class="position-absolute bottom-0 start-0 w-100 p-3"
                             style="background: linear-gradient(transparent, rgba(0,0,0,0.85));">
@@ -241,7 +230,7 @@
                 </div>
                 <div class="col-md-4">
                     <div class="position-relative overflow-hidden luxury-shadow" style="height: 420px;">
-                        <img src="images/dress_1.png" alt="Forecasting Lab" class="w-100 h-100 object-fit-cover">
+                        <img src="https://images.unsplash.com/photo-1519415510236-718bdfcd89c8?auto=format&fit=crop&w=800&q=80" alt="Forecasting Lab" class="w-100 h-100 object-fit-cover">
                         <div class="position-absolute bottom-0 start-0 w-100 p-3"
                             style="background: linear-gradient(transparent, rgba(0,0,0,0.85));">
                             <h5 class="text-white luxury-heading h6 mb-0">Predictive Scheduling Lab</h5>
@@ -250,7 +239,7 @@
                 </div>
                 <div class="col-md-4">
                     <div class="position-relative overflow-hidden luxury-shadow" style="height: 420px;">
-                        <img src="images/dress_2.png" alt="Executive Strategy" class="w-100 h-100 object-fit-cover"
+                        <img src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&w=800&q=80" alt="Executive Strategy" class="w-100 h-100 object-fit-cover"
                             style="object-position: center center;">
                         <div class="position-absolute bottom-0 start-0 w-100 p-3"
                             style="background: linear-gradient(transparent, rgba(0,0,0,0.85));">
@@ -294,7 +283,7 @@
                 <div class="col-md-4 col-lg-4">
                     <h5 class="luxury-heading mb-4">Studio Newsletter</h5>
                     <p class="small text-muted mb-4">Subscribe for executive beauty industry insights, KPI benchmarks, and data-driven management strategies.</p>
-                    <div class="d-flex">
+                    <div class="d-flex newsletter-input-group">
                         <input type="email" class="form-control-luxury me-2" placeholder="Corporate Email">
                         <button class="btn-gold px-4">Subscribe</button>
                     </div>

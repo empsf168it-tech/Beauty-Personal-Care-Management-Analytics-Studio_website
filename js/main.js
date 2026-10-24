@@ -41,22 +41,27 @@ document.addEventListener('DOMContentLoaded', () => {
     const rtlButtons = document.querySelectorAll('#rtl-toggle, .rtl-toggle-btn');
     const htmlEl = document.documentElement;
 
-    // Check for saved direction
-    const savedDir = localStorage.getItem('luxury-dir') || 'ltr';
-    htmlEl.setAttribute('dir', savedDir);
-    updateRtlIcons(savedDir);
+    if (rtlButtons.length > 0) {
+        // Check for saved direction
+        const savedDir = localStorage.getItem('luxury-dir') || 'ltr';
+        htmlEl.setAttribute('dir', savedDir);
+        updateRtlIcons(savedDir);
 
-    rtlButtons.forEach(btn => {
-        btn.addEventListener('click', (e) => {
-            e.preventDefault();
-            const currentDir = htmlEl.getAttribute('dir') || 'ltr';
-            const newDir = currentDir === 'ltr' ? 'rtl' : 'ltr';
+        rtlButtons.forEach(btn => {
+            btn.addEventListener('click', (e) => {
+                e.preventDefault();
+                const currentDir = htmlEl.getAttribute('dir') || 'ltr';
+                const newDir = currentDir === 'ltr' ? 'rtl' : 'ltr';
 
-            htmlEl.setAttribute('dir', newDir);
-            localStorage.setItem('luxury-dir', newDir);
-            updateRtlIcons(newDir);
+                htmlEl.setAttribute('dir', newDir);
+                localStorage.setItem('luxury-dir', newDir);
+                updateRtlIcons(newDir);
+            });
         });
-    });
+    } else {
+        htmlEl.setAttribute('dir', 'ltr');
+        localStorage.removeItem('luxury-dir');
+    }
 
     function updateRtlIcons(dir) {
         rtlButtons.forEach(btn => {
@@ -104,6 +109,19 @@ document.addEventListener('DOMContentLoaded', () => {
             link.addEventListener('click', closeSidebar);
         });
     }
+
+    // --- Active Link Sync (Desktop & Mobile/Tab Hamburger Menu) ---
+    const currentPath = window.location.pathname.split('/').pop() || 'index.html';
+    const cleanPath = currentPath.toLowerCase();
+    const allMenuLinks = document.querySelectorAll('.nav-links-desktop a, .sidebar-menu nav a');
+    allMenuLinks.forEach(link => {
+        const href = link.getAttribute('href');
+        if (!href) return;
+        const linkFile = href.split('#')[0].split('?')[0].split('/').pop().toLowerCase();
+        if (linkFile === cleanPath || (cleanPath === '' && linkFile === 'index.html') || (cleanPath === 'product-details.html' && linkFile === 'collections.html')) {
+            link.classList.add('active');
+        }
+    });
 
     // --- Navbar Scroll Effect ---
     const navbar = document.querySelector('.navbar-luxury');

@@ -44,14 +44,32 @@
             font-size: 1.15rem;
         }
 
-        body.contact-page .contact-form-shell .form-control-luxury,
-        body.contact-page .contact-form-shell .form-select.form-control-luxury {
-            background: transparent;
+        body.contact-page .contact-form-shell .form-control-luxury {
+            background-color: transparent;
             color: var(--text-main) !important;
             border: 1px solid rgba(214, 168, 95, 0.55);
             border-radius: 4px;
             padding: 0.95rem 1rem;
             box-shadow: none;
+        }
+
+        body.contact-page .contact-form-shell .form-select.form-control-luxury {
+            background-color: var(--card-bg);
+            color: var(--text-main) !important;
+            border: 1px solid rgba(214, 168, 95, 0.55);
+            border-radius: 4px;
+            padding: 0.95rem 2.75rem 0.95rem 1rem !important;
+            box-shadow: none;
+            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23D6A85F' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/%3e%3c/svg%3e") !important;
+            background-repeat: no-repeat !important;
+            background-position: right 1rem center !important;
+            background-size: 16px 12px !important;
+            cursor: pointer;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+            display: block;
+            width: 100%;
         }
 
         body.contact-page .contact-form-shell .form-control-luxury::placeholder {
@@ -62,28 +80,150 @@
         body.contact-page .contact-form-shell .form-control-luxury:focus,
         body.contact-page .contact-form-shell .form-select.form-control-luxury:focus {
             border-color: var(--accent-gold);
-            box-shadow: 0 0 0 2px rgba(214, 168, 95, 0.2);
+            box-shadow: 0 0 0 2px rgba(214, 168, 95, 0.25);
+            outline: none;
         }
 
-        body.contact-page .contact-form-shell .form-select.form-control-luxury {
-            padding-right: 2rem;
+        body.contact-page .contact-form-shell .form-select.form-control-luxury option {
+            background-color: #FFFFFF;
+            color: #241B22;
+            padding: 0.75rem;
         }
 
-        body.contact-page[data-theme="dark"] .contact-form-shell .form-control-luxury,
-        body.contact-page[data-theme="dark"] .contact-form-shell .form-select.form-control-luxury {
+        body.contact-page[data-theme="dark"] .contact-form-shell .form-control-luxury {
             border-color: rgba(214, 168, 95, 0.7);
             box-shadow: none;
+        }
+
+        body.contact-page[data-theme="dark"] .contact-form-shell .form-select.form-control-luxury {
+            background-color: #2D222A;
+            border-color: rgba(214, 168, 95, 0.7);
+            color: #FFFFFF !important;
+            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23D6A85F' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/%3e%3c/svg%3e") !important;
         }
 
         body.contact-page[data-theme="dark"] .contact-form-shell .form-control-luxury:focus,
         body.contact-page[data-theme="dark"] .contact-form-shell .form-select.form-control-luxury:focus {
             border-color: var(--accent-gold);
-            box-shadow: 0 0 0 2px rgba(214, 168, 95, 0.3);
+            box-shadow: 0 0 0 2px rgba(214, 168, 95, 0.35);
         }
 
         body.contact-page[data-theme="dark"] .contact-form-shell .form-select.form-control-luxury option {
-            background: #2D222A;
+            background-color: #2D222A;
             color: #FFFFFF;
+            padding: 0.75rem;
+        }
+
+        @media (max-width: 768px) {
+            body.contact-page .contact-form-shell {
+                padding: 1.75rem 1.25rem !important;
+            }
+
+            body.contact-page .contact-form-shell .form-select.form-control-luxury {
+                padding-right: 2.5rem !important;
+                font-size: 0.95rem;
+            }
+        }
+
+        /* Social Media Insights Cards */
+        body.contact-page .social-insights-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1.5rem;
+            max-width: 1200px;
+            margin: 0 auto;
+            width: 100%;
+        }
+
+        body.contact-page .social-channel-card {
+            display: flex;
+            align-items: center;
+            gap: 1.15rem;
+            padding: 1.25rem 1.5rem;
+            background: var(--card-bg);
+            border-left: 3px solid var(--accent-gold);
+            border-radius: 0 4px 4px 0;
+            text-decoration: none;
+            color: var(--text-main);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+            transition: var(--transition-smooth);
+            width: 100%;
+            text-align: left;
+        }
+
+        body.contact-page .social-channel-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 14px 35px rgba(214, 168, 95, 0.15);
+            color: var(--text-main);
+        }
+
+        body.contact-page .social-channel-card .social-card-icon {
+            width: 40px;
+            height: 40px;
+            min-width: 40px;
+            min-height: 40px;
+            flex-shrink: 0;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.85rem;
+            color: var(--accent-gold);
+            text-align: center;
+        }
+
+        body.contact-page .social-channel-card .social-card-info {
+            text-align: left;
+            min-width: 0;
+            flex: 1;
+        }
+
+        body.contact-page .social-channel-card .social-card-info h6 {
+            margin-bottom: 0.2rem;
+            font-size: 1.15rem;
+            line-height: 1.25;
+            color: var(--text-main);
+        }
+
+        body.contact-page .social-channel-card .social-card-info p {
+            margin-bottom: 0;
+            font-size: 0.85rem;
+            line-height: 1.35;
+            color: var(--text-muted);
+        }
+
+        body.contact-page[data-theme="dark"] .social-channel-card {
+            background: #2D222A;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+        }
+
+        body.contact-page[data-theme="dark"] .social-channel-card .social-card-info h6 {
+            color: #FFFFFF;
+        }
+
+        body.contact-page[data-theme="dark"] .social-channel-card .social-card-info p {
+            color: rgba(255, 249, 246, 0.72);
+        }
+
+        @media (max-width: 991px) {
+            body.contact-page .social-insights-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 1.25rem;
+                max-width: 650px;
+                margin: 0 auto;
+            }
+        }
+
+        @media (max-width: 576px) {
+            body.contact-page .social-insights-grid {
+                grid-template-columns: 1fr;
+                gap: 1rem;
+                max-width: 100%;
+                margin: 0 auto;
+            }
+
+            body.contact-page .social-channel-card {
+                padding: 1.15rem 1.25rem;
+            }
         }
     </style>
 </head>
@@ -99,19 +239,16 @@
 
             <div class="nav-links-desktop d-none d-lg-block">
                 <a href="index.html" class="nav-link-custom">Home</a>
+                <a href="about.html" class="nav-link-custom">About</a>
                 <a href="home2.html" class="nav-link-custom">Executive Suite</a>
                 <a href="collections.html" class="nav-link-custom">Solutions</a>
                 <a href="consignment.html" class="nav-link-custom">Onboarding</a>
-                <a href="about.html" class="nav-link-custom">About</a>
                 <a href="contact.html" class="nav-link-custom active">Contact</a>
             </div>
 
             <div class="header-actions d-flex align-items-center">
                 <button id="theme-toggle" class="btn border-0 p-2 me-2 d-none d-lg-inline-flex" aria-label="Toggle Theme">
                     <i class="bi bi-moon"></i>
-                </button>
-                <button id="rtl-toggle" class="btn border-0 p-2 me-2 d-none d-lg-inline-flex" aria-label="Toggle RTL">
-                    <i class="bi bi-text-paragraph"></i>
                 </button>
                 <a href="#" class="nav-link-custom me-3 d-none d-lg-inline-flex"><i class="bi bi-heart"></i></a>
                 <button id="hamburger-menu" class="btn border-0 p-0 d-lg-none" aria-label="Open Menu">
@@ -126,27 +263,23 @@
     <div id="sidebar-menu" class="sidebar-menu">
         <div id="sidebar-close" class="sidebar-close"><i class="bi bi-x-lg"></i></div>
         <nav class="d-flex flex-column gap-4">
-            <a href="index.html" class="fs-4 luxury-heading">Home</a>
-            <a href="home2.html" class="fs-4 luxury-heading">Executive Suite</a>
-            <a href="collections.html" class="fs-4 luxury-heading">Solutions</a>
-            <a href="consignment.html" class="fs-4 luxury-heading">Onboarding</a>
-            <a href="about.html" class="fs-4 luxury-heading">Our Story</a>
-            <a href="contact.html" class="fs-4 luxury-heading">Contact</a>
+            <a href="index.html" class="sidebar-nav-link">Home</a>
+            <a href="about.html" class="sidebar-nav-link">About</a>
+            <a href="home2.html" class="sidebar-nav-link">Executive Suite</a>
+            <a href="collections.html" class="sidebar-nav-link">Solutions</a>
+            <a href="consignment.html" class="sidebar-nav-link">Onboarding</a>
+            <a href="contact.html" class="sidebar-nav-link active">Contact</a>
         </nav>
         <div class="sidebar-utilities d-flex align-items-center gap-3 mt-4 pt-4">
             <button class="btn theme-toggle-btn d-inline-flex align-items-center gap-2" aria-label="Toggle Theme">
                 <i class="bi bi-moon"></i>
                 <span class="theme-label">Dark Mode</span>
             </button>
-            <button class="btn rtl-toggle-btn d-inline-flex align-items-center gap-2" aria-label="Toggle RTL">
-                <i class="bi bi-text-paragraph"></i>
-                <span class="rtl-label">RTL</span>
-            </button>
         </div>
     </div>
 
     <!-- Page Header (Unified Hero) -->
-    <header class="hero hero-small mb-5" style="background-image: url('images/collection_formal.png');">
+    <header class="hero hero-small mb-5" style="background-image: url('https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1600&q=80');">
         <div class="hero-overlay"></div>
         <div class="hero-content container py-5 text-center">
             <span class="text-white text-uppercase letter-spacing-2 mb-3 d-block">Get in Touch</span>
@@ -213,11 +346,11 @@
                             </div>
                             <div class="mb-4">
                                 <label class="small text-uppercase letter-spacing-1 mb-2">Inquiry Category</label>
-                                <select class="form-select form-control-luxury">
-                                    <option>Enterprise Platform Inquiry</option>
-                                    <option>Studio Onboarding &amp; Integration</option>
-                                    <option>Custom KPI Benchmarking</option>
-                                    <option>Partnership &amp; API Integration</option>
+                                <select class="form-select form-control-luxury" id="inquiryCategory" name="inquiryCategory" aria-label="Inquiry Category">
+                                    <option value="Enterprise Platform Inquiry">Enterprise Platform Inquiry</option>
+                                    <option value="Studio Onboarding & Integration">Studio Onboarding &amp; Integration</option>
+                                    <option value="Custom KPI Benchmarking">Custom KPI Benchmarking</option>
+                                    <option value="Partnership & API Integration">Partnership &amp; API Integration</option>
                                 </select>
                             </div>
                             <div class="mb-4">
@@ -254,35 +387,31 @@
             <span class="text-gold text-uppercase letter-spacing-2 small mb-3 d-block">Industry Knowledge</span>
             <h2 class="display-5 luxury-heading mb-4">Follow Studio Insights</h2>
             <p class="text-muted mx-auto mb-5" style="max-width: 600px;">Access the latest beauty industry analytics whitepapers, salon KPI benchmarks, and management frameworks across our channels.</p>
-            <div class="d-flex justify-content-center gap-4 flex-wrap">
-                <a href="#" class="d-flex align-items-center gap-3 p-4 luxury-shadow text-decoration-none"
-                    style="min-width: 200px; border-left: 3px solid var(--accent-gold);">
-                    <i class="bi bi-linkedin text-gold fs-2"></i>
-                    <div class="text-start">
+            <div class="social-insights-grid">
+                <a href="#" class="social-channel-card">
+                    <span class="social-card-icon"><i class="bi bi-linkedin"></i></span>
+                    <div class="social-card-info">
                         <h6 class="luxury-heading mb-0">LinkedIn</h6>
                         <p class="small text-muted mb-0">@beautystudioanalytics</p>
                     </div>
                 </a>
-                <a href="#" class="d-flex align-items-center gap-3 p-4 luxury-shadow text-decoration-none"
-                    style="min-width: 200px; border-left: 3px solid var(--accent-gold);">
-                    <i class="bi bi-instagram text-gold fs-2"></i>
-                    <div class="text-start">
+                <a href="#" class="social-channel-card">
+                    <span class="social-card-icon"><i class="bi bi-instagram"></i></span>
+                    <div class="social-card-info">
                         <h6 class="luxury-heading mb-0">Instagram</h6>
                         <p class="small text-muted mb-0">@beautystudiomgmt</p>
                     </div>
                 </a>
-                <a href="#" class="d-flex align-items-center gap-3 p-4 luxury-shadow text-decoration-none"
-                    style="min-width: 200px; border-left: 3px solid var(--accent-gold);">
-                    <i class="bi bi-twitter-x text-gold fs-2"></i>
-                    <div class="text-start">
+                <a href="#" class="social-channel-card">
+                    <span class="social-card-icon"><i class="bi bi-twitter-x"></i></span>
+                    <div class="social-card-info">
                         <h6 class="luxury-heading mb-0">X (Twitter)</h6>
                         <p class="small text-muted mb-0">@beautyanalytics</p>
                     </div>
                 </a>
-                <a href="#" class="d-flex align-items-center gap-3 p-4 luxury-shadow text-decoration-none"
-                    style="min-width: 200px; border-left: 3px solid var(--accent-gold);">
-                    <i class="bi bi-newspaper text-gold fs-2"></i>
-                    <div class="text-start">
+                <a href="#" class="social-channel-card">
+                    <span class="social-card-icon"><i class="bi bi-newspaper"></i></span>
+                    <div class="social-card-info">
                         <h6 class="luxury-heading mb-0">Substack</h6>
                         <p class="small text-muted mb-0">Beauty Data Dispatch</p>
                     </div>
@@ -323,7 +452,7 @@
                 <div class="col-md-4 col-lg-4">
                     <h5 class="luxury-heading mb-4">Studio Newsletter</h5>
                     <p class="small text-muted mb-4">Subscribe for executive beauty industry insights, KPI benchmarks, and data-driven management strategies.</p>
-                    <div class="d-flex">
+                    <div class="d-flex newsletter-input-group">
                         <input type="email" class="form-control-luxury me-2" placeholder="Corporate Email">
                         <button class="btn-gold px-4">Subscribe</button>
                     </div>
